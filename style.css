@@ -1,0 +1,96 @@
+:root {
+    --bookstoreFont: serif;
+}
+
+/*Body Start*/
+body {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--bookstoreFont);
+}
+
+/*Body end*/
+
+/* NavBar Start */
+.bookstoreLogo {
+    width: 50px;
+    margin: 0px 20px;
+}
+.navbar{
+    background-color: rgb(227, 116, 116);
+}
+.navbar-brand {
+    font-family: serif;
+    letter-spacing: 3px;
+   
+}
+
+.nav-item a {
+    font-family: serif;
+    color: white;
+    position: relative;
+}
+
+.dropdown-menu{
+    background-color: rgb(244, 153, 153);
+}
+@media screen and (min-width:992px) {
+    .nav-item a::before {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 0;
+        height: 1px;
+        left: 7px;
+        bottom: 7px;
+    }
+
+    .nav-item a:hover::before {
+        width: 80%;
+        transition: 0.5s;
+    }
+}
+
+/* NavBar End */
+
+/* Header Start */
+
+.headerText1 {
+    font-family: var(--bookstoreFont);
+}
+
+.headPlay {
+    transition: 0.5s;
+}
+
+.headPlay:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        height: 90vh;
+    }
+}
+
+/* Header End */
+
+/* About Start */
+.aboutText {
+    text-align: justify;
+}
+
+@media screen and (min-width:1400px) {
+    .aboutImage {
+        height: 700px !important
+    }
+}
+
+/* About End */

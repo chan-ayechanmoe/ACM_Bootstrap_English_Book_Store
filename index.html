@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan English Book Store</title>
+    <!--Favicon -->
+    <link rel="icon" href="./images/book store logo.png">
+    <!--Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Glightbox CSS CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css"
+        integrity="sha512-iQ3H4A+iyBTP8M4ypX5PrTt2S+G1zmRjf0k0uOASKlFHysV8TL9ZoQyVwPss0D12IBTMoDEHA8+bg8a1viS9Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--Main CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(235, 232, 232);">
+    <!-- Navbar Start -->
+    <nav id="navBar" class="navbar navbar-expand-lg  sticky-top ">
+        <div class="container-fluid">
+            <img class="bookstoreLogo" src="./images/book store logo.png" alt="chan_englishbookstore_logo">
+            <a class="navbar-brand fs-3 text-light" href="#">Book Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item me-xl-3 me-lg-1">
+                        <a class="nav-link fs-5 active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1">
+                        <a class="nav-link fs-5" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1">
+                        <a class="nav-link fs-5" href="#about">About</a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1">
+                        <a class="nav-link fs-5" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1">
+                        <a class="nav-link fs-5" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1">
+                        <a class="nav-link fs-5" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1 dropdown">
+                        <a class="nav-link fs-5 text-light dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu text-center border-light">
+                            <li><a class="dropdown-item fs-5" href="#"><i
+                                        class="fa-solid me-2 fa-pen-to-square"></i>Register</a></li>
+                            <li><a class="dropdown-item fs-5" href="#"><i
+                                        class="fa-solid me-2 fa-right-to-bracket"></i>Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider border-light">
+                            </li>
+                            <li><a class="dropdown-item fs-5" href="#"><i
+                                        class="fa-solid me-2 fa-door-open"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div id="btnSwitch"
+                    class="form-check form-switch me-2 d-flex align-items-center justify-content-center">
+                    <input class="form-check-input me-1 d-block" type="checkbox" role="switch"
+                        id="flexSwitchCheckDefault">
+                    <label class="form-check-label darkMode d-block fs-5 text-light"
+                        for="flexSwitchCheckDefault">Dark</label>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- ScrollSpy Start -->
+    <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+        <!-- Home start -->
+        <header class="header d-flex align-items-center" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center text-center">
+                    <!-- Home Text -->
+                    <div class="col-12 col-lg-6 order-2 order-lg-1 mb-5">
+                        <h2 class="headerText1 mb-4">Cambridge English Bookstore
+                        </h2>
+                        <p class="mb-4 w-75 m-auto">
+                            Welcome to our Cambridge English Bookstore!
+                            We are dedicated to providing a comprehensive selection of resources tailored
+                            for English learners and teachers at all levels—from beginner to advanced.
+                            Our collection includes materials that cater to the Common European Framework of Reference
+                            for Languages (CEFR) levels A1, A2, B1, B1+, B2, and C1.
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn btn-danger rounded-pill me-5" href="">Order Here!</a>
+                            <a class="glightbox headPlay text-danger fs-2 me-2"
+                                href="https://www.youtube.com/watch?v=nKFZJU7bvaw"><i
+                                    class="fa-regular fa-circle-play"></i></a>
+                            <span class="text-danger fw-bold">WATCH</span>
+                        </div>
+                    </div>
+                    <!-- Home Image -->
+                    <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
+                        <img class="img img-fluid w-75" src="./images/book store home photo.png" alt="homeImage"
+                            style="height: 350px;">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Home End -->
+
+        <!-- Menu Start-->
+        <section id="menu">
+            <div class="container">
+                <div class="row">
+                    <!-- Menu Title 1-->
+                    <div class="col-12 text-center">
+                        <h5 class="text-danger">Order</h5>
+                        <h2>Cambridge English : Pre Intermediate Books</h2>
+                    </div>
+                    <!-- Menu List 1-->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/Empower B1 Student.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Empower B1 Student Book</h5>
+                                    <p class="card-text">
+                                        This coursebook combines general English needed for exams.
+                                        It focus on real-world communication.
+                                    </p>
+                                    <h5 class="mb-3"> $30 to $45</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/Empower B1 Workbook.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Empower B1 Workbook</h5>
+                                    <p class="card-text">
+                                        A companion workbook that reinforces what you learn in the coursebook with
+                                        additional exercises and practice.
+                                    </p>
+                                    <h5 class="mb-3"> $15 to $25</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/EEmpower 3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: American Empower B1 Workbook
+                                    </h5>
+                                    <p class="card-text">
+                                        A companion workbook that reinforces what you learn in the coursebook with
+                                        additional exercises and practice.
+                                    </p>
+                                    <h5 class="mb-3"> $20 to $25</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="row mt-5">
+                    <!-- Menu Title 2-->
+                    <div class="col-12 text-center">
+                        <h5 class="text-danger">Order</h5>
+                        <h2>Cambridge English : Intermediate Books</h2>
+                    </div>
+                    <!-- Menu List 2-->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/Empower B1 Student.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Empower B1+ Student Book</h5>
+                                    <p class="card-text">
+                                        A comprehensive coursebook that combines grammar, vocabulary, and skills
+                                        practice, along with real-life contexts.
+                                    </p>
+                                    <h5 class="mb-3"> $30 to $45</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/Empower B1 Workbook.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Empower B1+ Workbook</h5>
+                                    <p class="card-text">
+                                        A workbook that reinforces the material covered in the Empower coursebook,
+                                        featuring additional exercises and practice.
+                                    </p>
+                                    <h5 class="mb-3"> $15 to $25</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/EEmpower 3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Preliminary for Schools
+                                        Trainer </h5>
+                                    <p class="card-text">
+                                        This book offers practice tests and training activities specifically for younger
+                                        learners preparing for the PET for Schools exam.
+                                    </p>
+                                    <h5 class="mb-3"> $20 to $25</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <!-- Menu Title 2-->
+                    <div class="col-12 text-center">
+                        <h5 class="text-danger">Order</h5>
+                        <h2>Cambridge English : Upper Intermediate Books</h2>
+                    </div>
+                    <!-- Menu List 2-->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/UpperInter1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Empower B2 Student Book</h5>
+                                    <p class="card-text">
+                                        This coursebook focuses on developing language skills for real-life
+                                        communication, with a mix of grammar, vocabulary, and practical exercises.
+                                    </p>
+                                    <h5 class="mb-3"> $30 to $45</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/UpperInter2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Empower B2 Workbook</h5>
+                                    <p class="card-text">
+                                        A companion workbook that reinforces the lessons from the coursebook, providing
+                                        additional exercises for practice, featuring practice tasks, exam strategies.
+                                    </p>
+                                    <h5 class="mb-3"> $15 to $25</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="./images/UpperInter4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Cambridge English: Preliminary for Schools
+                                        Trainer </h5>
+                                    <p class="card-text">
+                                        This coursebook focuses on developing language skills for real-life
+                                        communication, with a mix of grammar, vocabulary, and practical exercises. </p>
+                                    <h5 class="mb-3"> $20 to $25</h5>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu End -->
+    </div>
+    <!-- ScrollSpy End -->
+
+
+</body>
+
+<!--Glightbox JS CDN Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"
+    integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--Bootstrap JS CDN Link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+<!--Main JS Link -->
+<script src="main.js"></script>
+
+</html>
