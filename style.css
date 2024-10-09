@@ -133,3 +133,84 @@ h6 {
 }
 
 /* Event End */
+
+
+/* Gallery Start */
+.mainImage img {
+    width: 400px;
+    height: 300px;
+}
+
+.imgArrow {
+    width: 500px;
+    position: relative;
+    bottom: 180px;
+}
+
+.imgPrev,
+.imgNext {
+    color: rgb(216, 194, 194);
+    transition: 0.4s;
+}
+
+.imgNext {
+    float: right;
+}
+
+.imgPrev:hover,
+.imgNext:hover {
+    color: rgb(153, 10, 58);
+}
+
+.imgPrev:hover {
+    transform: translate(-10px);
+}
+
+.imgNext:hover {
+    transform: translate(10px);
+}
+
+.smallImage img {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .smallImage img {
+        display: block;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .smallImage img {
+        height: 90px;
+    }
+
+    .mainImage img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .imgArrow {
+        bottom: 220px;
+        width: 700px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .smallImage img {
+        height: 100px;
+    }
+
+    .mainImage img {
+        width: 700px;
+        height: 500px;
+    }
+
+    .imgArrow {
+        bottom: 250px;
+        width: 800px;
+    }
+}
+
+/* Gallery End */
