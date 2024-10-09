@@ -94,3 +94,42 @@ h6 {
 }
 
 /* About End */
+
+/* Event Start */
+@media screen and (min-width:0px) {
+    .eventImage {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .eventImage {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .eventImage {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .eventImage {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .eventImage {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .eventImage {
+        height: 680px;
+    }
+}
+
+/* Event End */
